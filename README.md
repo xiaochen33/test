@@ -68,8 +68,9 @@ sleep(2)
 
 #点击页面空白处
 driver.find_element_by_xpath('/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout[3]/android.widget.FrameLayout').click()
-#返回页面
 
+
+#返回页面
 sleep(1)
 driver.find_element_by_xpath('//android.widget.FrameLayout[@content-desc="Hide player controls"]/android.widget.FrameLayout[4]/android.view.ViewGroup/android.widget.ImageButton[1]').click()
 sleep(2)
