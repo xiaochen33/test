@@ -56,21 +56,26 @@ driver.swipe(100,700,100,300,10000)  #滑动
 
 sleep(2)
 driver.find_element_by_xpath('//android.widget.ImageButton[@content-desc="Navigate up"]').click()
+
 #点击小浮窗
 sleep(2)
 driver .find_element_by_xpath('//android.widget.FrameLayout[@content-desc="Show player controls"]/android.widget.FrameLayout[3]/android.widget.FrameLayout/android.widget.FrameLayout')
 sleep(1)
+
 #放大小浮窗
 driver .find_element_by_xpath('//android.widget.FrameLayout[@content-desc="Hide player controls"]/android.widget.FrameLayout[4]/android.view.ViewGroup/android.widget.ImageButton[3]')
 sleep(2)
+
 #点击页面空白处
 driver.find_element_by_xpath('/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout[3]/android.widget.FrameLayout').click()
 #返回页面
+
 sleep(1)
 driver.find_element_by_xpath('//android.widget.FrameLayout[@content-desc="Hide player controls"]/android.widget.FrameLayout[4]/android.view.ViewGroup/android.widget.ImageButton[1]').click()
 sleep(2)
 
 #点击小浮窗
 driver .find_element_by_xpath('//android.widget.FrameLayout[@content-desc="Show player controls"]/android.widget.FrameLayout[3]/android.widget.FrameLayout/android.widget.FrameLayout')
+
 #关闭小浮窗
 driver .find_element_by_xpath('//android.widget.FrameLayout[@content-desc="Hide player controls"]/android.widget.FrameLayout[4]/android.view.ViewGroup/android.widget.ImageButton[2]')
